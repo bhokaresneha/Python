@@ -1,0 +1,304 @@
+1. Program to print maximum among two numbers.
+=>
+num1=int(input("Enter First number =>"))
+num2=int(input("Enter second number =>"))
+if num1 > num2:
+    print("maximum no is",num1)
+else:
+    print("maximum no is",num2)
+#OUTPUT=>
+    
+Enter First number =>40
+Enter second number =>20
+maximum no is 40
+
+Enter First number =>20
+Enter second number =>50
+maximum no is 50
+
+
+2. Program to print maximum among three numbers.
+
+=>
+num1=int(input("Enter First number =>"))
+num2=int(input("Enter second number =>"))
+num3=int(input("Enter third number =>"))
+
+if num1 > num2 and num1 > num3:
+    print("maximum no is",num1)
+elif num2 > num1 and num2 > num3:
+    print("maximum no is",num2)
+else:
+    print("maximum no is",num3)
+
+
+#OUTPUT=>
+
+ Enter First number =>10
+Enter second number =>20
+Enter third number =>30
+maximum no is 30
+
+Enter First number =>40
+Enter second number =>20
+Enter third number =>10
+maximum no is 40   
+
+3. Program to check whether a given number is divisible by 3 or not.
+=>
+num=int(input("Enter number  to check divisible by 3 or not=>"))
+if num%3==0:
+    print(num,"is divisible by 3")
+else :
+    print(num,"is not divisible by 3")
+   
+#OUTPUT=>
+
+Enter number  to check divisible by 3 or not=>6
+6 is divisible by 3
+
+Enter number  to check divisible by 3 or not=>5
+5 is not divisible by 3
+
+4. Program to check whether a given number is divisible by 5 or not.
+=>
+num=int(input("Enter number  to check divisible by 5 or not=>"))
+if num%5==0:
+    print(num,"is divisible by 5")
+else :
+    print(num,"is not divisible by 5")
+   
+#OUTPUT=>
+Enter number  to check divisible by 5 or not=>10
+10 is divisible by 5
+
+Enter number  to check divisible by 5 or not=>12
+12 is not divisible by 5
+
+
+5. Program to check whether a given number is divisible by 11 or not.
+=>
+num=int(input("Enter number  to check divisible by 11 or not=>"))
+if num%11==0:
+    print(num,"is divisible by 11")
+else :
+    print(num,"is not divisible by 11")
+   
+#OUTPUT=>
+
+Enter number  to check divisible by 11 or not=>33
+33 is divisible by 11
+
+Enter number  to check divisible by 11 or not=>54
+54 is not divisible by 11
+
+6. Program to check whether a given number is even or odd.
+=>
+num=int(input("Enter number to check whether a given number is even or odd=>"))
+if num%2==0:
+    print(num,"is even number")
+else :
+    print(num,"is odd number")
+   
+#OUTPUT=>
+
+Enter number to check whether a given number is even or odd =>12
+12 is even number
+
+Enter number to check whether a given number is even or odd =>13
+13 is odd number
+
+7. Program to check whether a year is a leap year or not.
+=>
+year=int(input("Enter year to check whether a year is a leap year or not=>"))
+if year%4==0 and year%100!=0:
+    print(year,"is leap")
+else :
+    print(year,"is not a leap year")
+   
+#OUTPUT=>
+
+Enter year to check whether a year is a leap year or not=>2012
+2012 is leap
+
+Enter year to check whether a year is a leap year or not=>2013
+2013 is not a leap year
+
+8. Program to check whether a given input is digit or not.
+=>
+9. Program to check whether a given input is the alphabet or not.
+=>
+10. Program to check whether a given number is a positive or negative number.
+=>
+num=int(input("Enter number to check whether a given number is a positive or negative number=>"))
+
+if num >= 0:
+    print("number is positive")
+else :
+    print("number is negative")
+   
+#OUTPUT=>
+
+Enter number to check whether a given number is a positive or negative number=>0
+number is positive
+
+Enter number to check whether a given number is a positive or negative number=>-1
+number is negative
+11. Program to check whether a character is a vowel or consonant.
+=>
+a=input("Enter character to check whether a character is a vowel or consonant=>")
+
+if a=='a' or a=='e' or a=='i' or a=='o' or a=='u':
+    print("character is a vowel")
+else:
+    print("Character is a constant")
+
+   
+#OUTPUT=>
+
+Enter character to check whether a character is a vowel or consonant=>f
+Character is a constant
+
+Enter character to check whether a character is a vowel or consonant=>o
+character is a vowel
+
+12. Program to check whether a given character is uppercase or lowercase.
+=>
+
+13. Program to check whether a person is valid for vote or not?
+=>
+age=int(input("Enter age =>"))
+
+if age>=18:
+    print("Person eligible for voting")
+else:
+    print("Person not eligible for Voting")
+
+   
+#OUTPUT=>
+Enter age =>18
+Person eligible for voting
+
+Enter age =>Enter age =>7
+Person not eligible for Voting
+
+14. Write a programs to display “Hello” if a number entered by user is Multiple of 5 otherwise print
+“Bye”
+
+=>
+num=int(input("Enter number =>"))
+if num%5==0:
+    print("Hello")
+else:
+    print("Byeee")
+
+   
+#OUTPUT=>
+
+Enter number =>66
+Byeee
+
+Enter number =>500
+Hello
+
+15. Write a programs to Display Last Digit OF Number.
+=>
+num=int(input("Enter number =>"))
+num1=num%10
+print(num1)
+#OUTPUT=>
+Enter number =>101
+1
+Enter number =>123
+3
+16. Write a programs to check weather the last digit of number(Enter By user ) is divisible by 3 or not.
+=>
+num=int(input("Enter number =>"))
+num1=num%10
+print(num1)
+if num1==0:
+    print(num1,"zero is not divisible by 3")
+elif num1%3==0:
+    print(num1,"is divisible by 3")
+else:
+    print(num1,"is not divisible by 3")
+
+   
+#OUTPUT=>
+
+Enter number =>110
+0
+0 zero is not divisible by 3
+
+Enter number =>112
+2
+2 is not divisible by 3
+
+Enter number =>113
+3
+3 is divisible by 3
+
+
+
+17. Write a programs to accept a number from 1 to 7 and display the name
+
+18. Write a program to check whether a person is a senior citizen or not.
+=>
+age=int(input("Enter the age to check whether a person is senior citizen or not=>"))
+if age>60:
+    print("person is  senior citizen")
+else:
+    print("person is not senior citizen")
+
+#OUTPUT=>
+Enter the age to check whether a person is senior citizen or not=>60
+person is not senior citizen
+
+Enter the age to check whether a person is senior citizen or not=>65
+person is eligible senior citizen
+
+Enter the age to check whether a person is senior citizen or not=>45
+person is not senior citizen
+
+
+19. Accept the age of 4 people and display the youngest one.
+age1=int(input("Enter the age of 1st person =>"))
+age2=int(input("Enter the age of 2nd person =>"))
+age3=int(input("Enter the age of 3rd person =>"))
+age4=int(input("Enter the age of 4th person =>"))
+if age1 < age2 and age1 < age3 and age1 < age4:
+    print("1st person is the youngest")
+elif age2 < age1 and age2 < age3 and age2 < age4:
+    print("2nd person is the youngest")
+elif age3 < age1 and age3 < age2 and age3 < age4:
+    print("3rd person the youngest")
+else:
+    print("4th person is the youngest")
+
+#OUTPUT=>
+
+Enter the age of 1st person =>10
+Enter the age of 2nd person =>20
+Enter the age of 3rd person =>50
+Enter the age of 4th person =>60
+1st person is the youngest
+
+
+25. Write a program to input electricity unit charges and calculate total electricity bill according to
+the given condition:
+For first 50 units Rs. 0.50/unit
+For next 100 units Rs. 0.75/unit
+For next 100 units Rs. 1.20/unit
+For unit above 250 Rs. 1.50/unit
+An additional surcharge of 20% is added to the bill
+=>
+
+26. Write a program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and
+Computer. Calculate percentage and grade according to following:
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+=>
