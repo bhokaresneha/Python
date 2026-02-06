@@ -1,0 +1,242 @@
+Datatype_String operations_assignment(concatination,slicing ,str methods ).
+1. Write a program to join the below string.
+	---- a = "Hello" and b="World"
+=>
+	a+b
+	'HelloWorld'
+
+2. Write a program to join below 5 for words.
+---- a = "H", b="e", c="l", d="l" and e="o"
+
+=>
+	a+b+c+d+e
+	'Hello'
+3. Write a program to replicate "king" 5 times.
+=>
+	a*5
+	'kingkingkingkingking'
+
+4. Write a program to replicate "Hello" 3 times such each Hello will have sapces.
+---- eg. output ==> Hello Hello Hello Hello Hello
+
+=>	(a+" ")*3
+	'Hello Hello Hello '
+	(a+" ")*2+a
+	'Hello Hello Hello'
+	
+
+
+5. Write a program for following output.
+---- a = "Hello", b="world", c = "Python"
+---- output ==> Hello Hello World Hello Hello Hello Python Hello
+
+=>
+	(a+" ")*2+b+" "+(a+" ")*3+c+" "+a
+	'Hello Hello World Hello Hello Hello Python Hello'
+
+6. Write a program for the following output :
+---- a = "The Jungle King", b="Tiger", c = "Jumble"
+---- output : "Tiger Jumble Tiger Tiger Tiger The Jungle King
+
+=>
+	b+" "+" "+c+" "+(b+" ")*3+a
+	'Tiger  Jumble Tiger Tiger Tiger The Jungle King'
+
+7. Write a program to extract the last character of.
+	---- a = "Hello"
+
+=>
+	a[4]
+	'o'
+	OR
+	a[-1]
+	'o'
+
+8. Write a program to extract the letter "e" from "Hello".
+=>	
+	a[1]
+	'e'
+	
+9. Write a program to extract the letter "o" from "Hello".
+=>	
+	a[4]
+	'o'
+	
+10. Write a program to extract the letter "He" from "Hello".
+=>	
+	a[0]+a[1]
+	'He'
+	
+11. Write a program to extract the letter "elo" from "Hello" without slicing.
+=>
+	a[1]+a[3]+a[4]
+	'elo'
+	
+12. Write a program to extract the letter from "The Jungle King" such that output will be
+"JngKing" without slicing.
+
+=>	
+	a="The Jungle King"
+	a[4]+a[6]+a[7]+a[11]+a[12]+a[13]+a[14]
+	'JngKing'
+
+
+13. Write a program to for the following output without slicing.
+	---- text = "The Jungle is a Green Place"
+	---- output : "The is"
+=>	
+	text[0]+text[1]+text[2]+" "+text[11]+text[12]
+	'The is'
+	
+14. Write a program to for the following output without slicing.
+	---- text = "The Jungle is a Green Place"
+	---- output : "TheThe is is"
+=>
+	(text[0]+text[1]+text[2])*2+(" "+text[11]+text[12])*2
+	'TheThe is is'
+
+15. Write a program to for the following output without slicing.
+	---- text = "The Jungle is a Green Place"
+	---- output : "TheTheTheTheTheTheis is is is is Greeeeeeeeeeen"
+=>
+	(text[0]+text[1]+text[2])*6+(text[11]+text[12]+" ")*5+text[16]+text[17]+text[18]*11+text[20]
+	'TheTheTheTheTheTheis is is is is Greeeeeeeeeeen'
+
+16. Write a program to reverse the following string.
+	---- text = "The Jungle book"
+=>
+	text[-1:-17:-1]	
+	'koob elgnuJ ehT'
+	
+
+17. Write a program to reverse the following string.
+	---- text = "Python developer"
+=>
+
+	text[-1:-17:-1]
+	'repoleved nohtyP'
+
+18. Write a program for the following output.
+	---- text = "Python developer"
+	---- output : "repoleved nohtyP"
+=>
+		text[-1:-17:-1]
+		'repoleved nohtyP'
+19. Write a program for the following output using slicing
+	---- text = "Python developer"
+	---- output : "developer Python"
+=>
+	text[7:18:1]+" "+text[0:7:1]
+	'developer Python '
+	
+20. Write a program for the following output using slicing.
+	---- text = "Python developer"
+	---- output : nohtyP repoleved"
+=>
+
+	text[-11:-17:-1]+" "+text[-1:-11:-1]
+	'nohtyP repoleved '
+
+21. Write a program for the following output using slicing.
+	---- text = "Python Developer"
+	---- output : "thon loper"
+=>
+	text[2:7:1]+" "+text[11:17:1]
+	'thon  loper'
+
+22. Write a program for the following output using slicing.
+	---- text = "Python Developer"
+	---- output : "thon loper loper loper loper"
+=>
+	text[2:7:1]+" "+(text[11:17:1]+" ")*4
+	'thon  loper loper loper loper '
+
+23. Write a program for the following output using slicing.
+	---- text = "Python Developer"
+	---- output : "thon thon thon loperloperloper"
+=>
+	(text[2:7:1]+" ")*3+(text[11:17:1])*3
+	'thon  thon  thon  loperloperloper'
+	
+24. Write a program for the following output using slicing.
+	---- text = "Python Developer"
+	---- output : "Python loper Devel Dev Devel"
+=>
+	text[0:7:1]+" "+text[11:17:1]+" "+text[7:14:1]+" "+text[7:10:1]+" "+text[7:14:1]
+	
+
+25. Write a program for the following output using slicing.
+	---- text = "Python Developer"
+	---- output : "Ph Dlr Developer"
+=>
+	text[0:6:3]+" "+text[7:17:4]+" "+text[7:16:1]
+
+
+		
+26. Write a program for the following output using slicing.
+	---- text = "Python Developer"
+	---- output : "thon loper yoDe"
+=>
+	text[2:7:1]+" "+text[11:17:1]+" "+text[1:11:3]
+	'thon  loper yoDe'
+
+
+27. consider a text = "hELLo WorlD tHiS iS pYthON"
+=>
+	text = "hELLo WorlD tHiS iS pYthON"
+
+28. Write a program for the following output.
+	--- output : 'Hello world this is python'
+=>
+	
+	
+29. Write a program for the following output.
+	--- output : 'Hello World This Is Python'
+=>	text.title()
+
+	
+30. Write a program for the following output.
+	--- Output : 'HELLO WORLD THIS IS PYTHON'
+=>	text.upper()
+
+31. Write a program for the following output.
+	--- Output : 'hello world this is python
+=>	text.casefold()
+		OR
+	text.lower()
+	
+32. Write a program for the following output.
+	--- Output : " hELLo WorlD tHiS iS pYthON "
+=>
+	text
+	"hELLo WorlD tHiS iS pYthON"
+
+
+33. Write a program for the following output.
+	--- Output : '------------hELLo WorlD tHiS iS 	pYthON------------'
+=>	
+	text.center(50,"-")
+'------------hELLo WorlD tHiS iS pYthON------------'
+		
+34. Write a program for the following output.
+	--- Output : '------------hELLo WorlD tHiS iS pYthON------------'
+=>
+	text.center(50,"-")
+'------------hELLo WorlD tHiS iS pYthON------------'
+
+35. Write a program to count the letter "o" in the following string.
+	--- text = "Hello world im Python"
+=>
+	text.count("o")
+	3
+
+36. Write a program to count the letter "h" in the following string.
+	--- text = "The world have may famours poets in this place.
+=>
+	text.count("h")
+	3
+37. Write a program to count the letter "is" in the following string.
+	--- text = "His first love is Dog and last love is 	Dog and as she is dog Lover."
+=>
+	text.count("is")
+	4

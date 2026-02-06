@@ -1,0 +1,372 @@
+Dictionary Datatype.
+1. What is dictionary?
+=> it is a collection of key and value pairs where keys are always unique ,pairs are seprated with comma and elcosed in curly '{ }' brackets.
+
+2. Why do we use dictionary?
+=> Holds the elements in key-value mapping format 
+
+
+
+d = {"name":"Raju", "lname":"Kala", "address":"Thane", "pin":400078, "contact":1234567,
+"email":"Raj12@gmail.com"}
+
+cart = {"Book":"Rich dad poor dad", "Salary":300000, "company":"Learn and Code","Platform":"YouTube"}
+
+mydict = { "One":{1, 3, 5, 6), 1:"One", None:"Nothing", True:"Boolean", ("Hello", "World",
+45):["My Tuple", "List world"]}
+
+
+3. Create a empty dictionary with the name of dictionary.
+=>
+	dictionary={}
+
+		OR	
+	dictionary={("","")}
+		
+		OR
+	dictionary=dict()
+	
+	
+4. Create a dictionary with single pair of key and value pair.
+=>
+	dictionary={"Name","Sneha"}
+	
+	dictionary
+	{'Name', 'Sneha'}
+
+5. Write a program to join both d and cart dictionary.
+=>
+	d|cart
+
+	{'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com', 'Book': 'Rich dad poor dad', 'Salary': 300000, 'company': 'Learn and Code', 'Platform': 'YouTube'}
+	
+6. Write a program to join all the 3 dictionary cart, d and mydict.
+=>
+	d|cart|mydict
+
+	{'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com', 'Book': 'Rich dad poor dad', 'Salary': 300000, 'company': 	'Learn and Code', 'Platform': 'YouTube', 'One': (1, 3, 5, 6), 1: 'Boolean', None: 'Nothing', ('Hello', 'World', 45): ['My Tuple', 'List world']}
+	
+
+7. Write a program to join d and mydict.
+
+=>
+	d|mydict
+
+	{'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com', 'One': (1, 3, 5, 6), 1: 'Boolean', None: 'Nothing', ('Hello', 'World', 45): ['My Tuple', 'List world']}
+
+8. Write a program to find the value of key "address" from dictionary d.
+=>
+	d["address"]
+	'Thane'
+	
+9. What is the value of key "pin" from the dictionary d.
+=>
+	d["pin"]
+	400078
+
+10. What is the value of key "One" from the dictionary mydict.
+=>
+	mydict["One"]
+	(1, 3, 5, 6)
+
+11. What is the value of key ("Hello","World", 45) from the dictionary mydict.
+=>
+
+	mydict[('Hello', 'World', 45)]
+	
+	['My Tuple', 'List world']
+	
+
+12. Write a program to replace the value of "lname" from "kala" to "Bala" from dictionary d.
+=>
+	d.update({"lname":"Bala"})
+	d
+	{'name': 'Raju', 'lname': 'Bala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com'}
+	
+13. Write a program to replace the value of pin from 400078 to 400079 from dictionary d.
+=>
+	d.update({"pin":400078})
+	d
+	{'name': 'Raju', 'lname': 'Bala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com'}
+	
+	
+14. Write a program to replace the value of contact from 1234567 to 987654321 from dictionary d.
+=>
+	d.update({"contact":987654321})
+	d
+	{'name': 'Raju', 'lname': 'Bala', 'address': 'Thane', 'pin': 400078, 'contact': 987654321, 'email': 'Raj12@gmail.com'}
+
+	
+15. Write a program to replace the value of Platform from "YouTube" to "Instagram and YouTube" from dictionary cart.
+=>
+	cart.update({"platform":"Instagram and YouTube"})
+	cart
+	{'Book': 'Rich dad poor dad', 'Salary': 300000, 'company': 'Learn and Code', 'Platform': 'YouTube', 'platform': 'Instagram and YouTube'}
+	
+16. Write a program to get all the keys at once.
+=>
+	d.keys()
+	dict_keys(['name', 'lname', 'address', 'pin', 'contact', 'email'])
+	
+
+17. Write a program to get all the keys at once and then convert them into a list.
+=>
+	a=list(d.keys())
+	
+	a
+	['name', 'lname', 'address', 'pin', 'contact', 'email']
+
+18. Write a program to get all the values at once.
+=>
+	d.values()
+	dict_values(['Raju', 'Bala', 'Thane', 400078, 987654321, 'Raj12@gmail.com'])
+	
+
+19. Write a program to get all the values at once and then convert them into a list.
+=>
+	val=list(d.values())
+
+	val
+	['Raju', 'Bala', 'Thane', 400078, 987654321, 'Raj12@gmail.com']
+	
+
+20. Write a program to get all the keys and values pair in a tuples inside a list.
+=>
+	d.items()
+	dict_items([('name', 'Raju'), ('lname', 'Bala'), ('address', 'Thane'), ('pin', 400078), ('contact', 987654321), ('email', 'Raj12@gmail.com')])
+
+   #tuples inside list
+	pair=list(d.items())
+	pair
+	[('name', 'Raju'), ('lname', 'Bala'), ('address', 'Thane'), ('pin', 400078), ('contact', 987654321), ('email', 'Raj12@gmail.com')]
+
+	
+
+21. Write a program to check "Name" key is exist or not.
+=>
+	d.get("Name","not exist")
+	'not exist'
+and
+	if exist	
+	d.get("name","not exist")
+	'Raju'
+	
+22. Write a program to check "Company" key exist or not in dictionary cart.
+=>
+
+	cart.get("Company","Not Found")
+	'Not Found'
+	
+23. Write a program to check "Raju" key exist or not in dictionary cart.
+=> 
+	cart.get("Raju","Not Exist")
+	'Not Exist'
+
+24. Write a program to check "address" key is exist or not in dictionary d if yes then print it's
+value else print "No found" message.
+=>
+	d.get("address","No found")
+	'Thane'
+
+25. Write a program to check "King" key is exist or not in dictionary d if yes then print it's value
+else print "No found" message.
+=>
+	d.get("King","No found")
+	'No found'
+
+26. Write a program to check "Hello World" key is exist or not in dictionary d if yes then print
+it's value else print "Can't search" message.
+=>
+	d.get("Hello World","can't search")
+	"can't search"
+
+27. Write a program to check "pin" key is exist if yes then print it's value else insert it with
+value "300369" in dictionary d.
+=>
+	d={'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com'}
+
+	pin=d.get("pin","Not Exist")
+
+	if pin=="Not Exist":
+    		d.update({"pin":"300369"})
+   		 print("pin updated in dictionary d")
+    		print("\n updated dictionary d => ",d)
+
+	else:
+    		print("pin alredy existed with value==>",d.get("pin"))
+	
+
+28. Write a program to check "Done" key is exist if yes then print it's value else insert it with
+value "Yes" in dictionary d.
+=>
+
+	#d={'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com'}
+	d={'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com', 'done': 'yes'}
+
+	key=d.get("done","Not Exist")
+
+	if key=="Not Exist":
+		
+		print("done key not exixted in dictionry d ")
+		
+		d.setdefault("done","yes") 
+		
+		print("done key added in dictionary d")
+		print("\n updated dictionary d => ",d)
+	else:
+		print("done key alredy existedwith value==>",d.get("done"))
+
+
+
+29. Write a program to check "Hello" key is exist if yes then print it's value else insert it with
+value "Bye" in dictionary d.
+=>
+	#d={'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com', 'done': 'yes'}
+	d={'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com', 'done': 'yes', 'Hello': 'Bye'}
+
+	key=d.get("Hello","Not Exist")
+
+	if key=="Not Exist":
+		print("done key not exixted in dictionry d ")
+		
+		d.setdefault("Hello","Bye")
+    	
+		print("Hello key added in dictionary d")
+    		print("\n updated dictionary d => ",d)
+	else:
+    		print("Hello key alredy existed with value==>",d.get("Hello"))
+
+	
+
+30. Write a program to insert a new key "King" and value "Queen" in the dictionary d.
+=>
+	d.setdefault("King","Queen")
+	'Queen'
+	
+	d
+	{'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com', 'done': 'yes', 'Hello': 'Bye', 'King': 'Queen'}
+
+31. Write a program to create empty dictionary. Then insert following keys and values at once.
+	--- "One" :"One"  --- "Two" :"Two"	--- "Three": 3	--- "Four" : 4	--- "Three": 5
+=>
+	numbers={}
+
+	type(numbers)
+	<class 'dict'>
+
+	numbers.update({"One" :"One","Two" :"Two","Three": 3,"Four" : 4,"Three": 5})
+	numbers
+	{'One': 'One', 'Two': 'Two', 'Three': 5, 'Four': 4}
+
+32. Write a program to insert key "Hello" and value "World" in dictionary d.
+=>
+
+	d={'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com', 'done': 'yes', 'Hello': 'Bye', 'King': 'Queen'}
+	[Note=> hello key alredy existed we used update method to overright value with actual value]
+
+	d.update({"Hello":"World"})
+	d
+	{'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com', 'done': 'yes', 'Hello': 'World', 'King': 'Queen'}
+	
+
+33. Write a program to insert key and value pairs ("Earth", "Planet"), ("Moon", "satellite") and ("sun", "star") into the dictionary cart.
+=>
+	cart.update({("Earth", "Planet"), ("Moon", "satellite"),("sun", "star")})
+	cart
+	{'Book': 'Rich dad poor dad', 'Salary': 300000, 'company': 'Learn and Code', 'Platform': 'YouTube', 'sun': 'star', 'Earth': 'Planet', 'Moon': 'satellite'}
+ 	
+
+34. Write a program to remove the "moon" and "satellite" pair from the dictionary cart.
+=>
+	cart.pop("moon")
+	'star'
+
+	cart
+	{'Book': 'Rich dad poor dad', 'Salary': 300000, 'company': 'Learn and Code', 'Platform': 'YouTube', 'sun': 'star', 'Earth': 'Planet'}
+
+	
+35. Write a program to remove the pair "sun" and "star" from the dictionary cart.
+=>
+	cart=	{'Book': 'Rich dad poor dad', 'Salary': 300000, 'company': 'Learn and Code', 'Platform': 'YouTube', 'sun': 'star', 'Earth': 'Planet'}
+	
+	cart.pop("sun")
+	'star'
+
+	cart
+	{'Book': 'Rich dad poor dad', 'Salary': 300000, 'company': 'Learn and Code', 'Platform': 'YouTube', 'Earth': 'Planet'}
+
+36. Write a program to remove the pair "True" and "1234 from the dictionary d.
+=>
+		
+
+37. Write a program to remove the pair "Done" and "Ye" from the dictionary d.
+=>
+	d.pop("done")
+	'yes'
+
+38. Write a program to remove the last pair of dictionary d.
+=>
+	d.popitem()
+	('King', 'Queen')
+		
+39. Write a program to remove the last pair of dictionary cart.
+=>
+	cart.popitem()
+	('Earth', 'Planet')
+
+40. Write a program to remove the last item of a dictionary cart.
+=>
+	cart.popitem()
+	('Earth', 'Planet')
+	
+
+41. Write a program to remove the last item of a mydict dictionary.
+=>
+	mydict.popitem()
+	(('Hello', 'World', 45), ['My Tuple', 'List world'])
+
+
+42. Write a program to find the Value of Key "Platform" from dictionary cart.
+=>
+	cart.get("Platform")
+	'YouTube'
+
+43. Write a program to replace the value of Platform from "YouTube" to "Instagram and YouTube" from dictionary cart.
+=>	
+	cart.update({"Platform":"Instagram and YouTube"})
+	
+	cart
+	{'Book': 'Rich dad poor dad', 'Salary': 300000, 'company': 'Learn and Code', 'Platform': 'Instagram and YouTube', 'Earth': 'Planet'}
+	
+44. Write a program to check "Hello World" key is exist or not in dictionary d if yes then print
+it's value else print "Can't search" message.
+=>
+	d.get("Hello World","Can't search")
+	"Can't search"
+	
+45. Write a program to check "True" key is exist if yes then print it's value else insert it with value "1234" in dictionary d.
+=>
+	d.get("True","can't Search")
+	"can't Search"
+	
+46. Write a program to insert key "Hello" and value "World" in dictionary d.
+=>
+	d.update({"Hello":"World"})
+	d
+	{'name': 'Raju', 'lname': 'Kala', 'address': 'Thane', 'pin': 400078, 'contact': 1234567, 'email': 'Raj12@gmail.com', 'Hello': 'World'}
+
+47. Write a program to delete the dictionary d.
+=>
+	del d
+	
+48. Write a program to delete the dictionary cart.
+=>
+	del cart
+
+49. Write a program to copy of dictionary mydict.
+=>
+	md=mydict OR	md=mydict.copy()
+	
+50. Write a program to delete dictionary mydict.
+=>
+	del mydict19:39 29-11-2025

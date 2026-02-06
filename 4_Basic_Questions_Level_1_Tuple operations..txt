@@ -1,0 +1,319 @@
+Tuple operations.
+a = ( 1, 3, 2, 5, 7, 9)
+b = ("Hello", "World", 1, 5, 2)
+c = ( "My", "Name", "is", "Python")
+d = ("Hello", "Hello", "Hello", "World", 1, 2, 1, "Hello", 5, 2)
+
+
+1. Write a program to get the below output.
+	--- ( 1, 3, 2, 5, 7, 9, "Hello", "Wrold", 1, 5, 2)
+=>
+	a+b
+	(1, 3, 2, 5, 7, 9, 'Hello', 'World', 1, 5, 2)
+
+2. Write a program to get the below output.
+	--- ("Hello", "Wrold", 1, 5, 2, 1, 3, 2, 5, 7, 9)
+=>
+	b+a
+	('Hello', 'World', 1, 5, 2, 1, 3, 2, 5, 7, 9)
+
+3. Write a program to get the below output.
+	--- ("Hello", "Wrold", 1, 5, 2, "Hello", "Wrold", 1, 5, 2, "Hello", "Wrold", 1, 5, 2)
+=>
+	b*3
+	('Hello', 'World', 1, 5, 2, 'Hello', 'World', 1, 5, 2, 'Hello', 'World', 1, 5, 2)	
+
+4. Write a program to get the below output.
+	--- (1, 3, 2, 5, 7, 9, 1, 3, 2, 5, 7, 9)
+=>
+	a*2
+	(1, 3, 2, 5, 7, 9, 1, 3, 2, 5, 7, 9)
+
+5. Write a program to get the below output.
+	--- ( "My", "Name", "is", "Python", "My", "Name", "is", "Python", "My", "Name",
+"is", "Python")
+=>
+	c*3
+('My', 'Name', 'is', 'Python', 'My', 'Name', 'is', 'Python', 'My', 'Name', 'is', 'Python')
+
+6. Write a program to get the below output.
+	--- 2
+=>
+	a[2]
+	2
+
+7. Write a program to get the below output.
+	--- "Hello"
+=>
+	b[0]
+
+8. Write a program to get the below output.
+	--- "Name"
+=>
+	c[1]
+	'Name'
+
+9. Write a program to get the below output.
+	--- "World"
+=>
+	b.index("World")
+	1
+
+	b[1]
+	'World'
+
+	
+10. Write a program to get the below output.
+	--- 9
+=>
+	a[-1]
+	9
+
+11. Write a program to get the below output.
+	--- "My"
+=>
+	c[0]
+	'My'
+
+12. Write a program to get the below output.
+	--- ( "My", "Name")
+=>
+	c[0:2:]
+	('My', 'Name')
+
+13. Write a program to get the below output.
+	--- ( "is", "Python")
+=>
+	c[2:4:]
+	('is', 'Python')
+	
+14. Write a program to get the below output.
+	--- ("World", 1, 5)
+=>
+	b[1:4:]
+	('World', 1, 5)
+	
+15. Write a program to get the below output.
+	--- ( 3, 2, 5, 7)
+=>
+	a[1:5:]
+	(3, 2, 5, 7)
+
+16. Write a program to get the below output.
+	--- ( 3, 2, 5, 7, "is", "Python")
+=>
+	a[1:5:]+c[2:4:]
+	(3, 2, 5, 7, 'is', 'Python')
+	
+	
+17. Write a program to get the below output.
+	--- ("is", "Python", 3, 2, 5, 7)
+=>
+	c[2:4:]+a[1:5:]
+	("is", "Python", 3, 2, 5, 7)
+
+18. Write a program to get the below output.
+	--- ( 3, 2, 5, 7, "is", "Python", "Hello")
+=>
+	a[1:5:]+c[-1:-2:-1]+b[0:1:]
+	(3, 2, 5, 7, 'Python', 'Hello')
+	
+
+19. Write a program to get the below output.
+	--- ( 3, 2, 5, 7, "Hello", "Wrold")
+=>
+	a[1:5:]+b[0:2:]
+	(3, 2, 5, 7, 'Hello', 'World')
+
+20. Write a program to get the below output.
+	--- ( "Hello", "Wrold", 3, 2, 5, 7)
+=>
+	b[0:2:]+a[1:5:]
+	('Hello', 'World', 3, 2, 5, 7)
+
+21. Write a program to get the below output.
+	--- ( 3, 2,"Hello", "Wrold", "is", "Python")
+=>
+	a[1:2:]+b[0:2:]+c[-2:-5:-2]+c[3::]
+	(3, 'Hello', 'World', 'is', 'My', 'Python')
+
+22. Write a program to get the below output.
+	--- ( 3, 2,"Hello", "Wrold", "is", "My", "Python")
+=>
+	a[1:2:]+b[0:2:]+c[2:3:]+c[0:4:3]
+	(3, 'Hello', 'World', 'is', 'My', 'Python')
+
+23. Write a program to extract "Hell" from "Hello", "thon" from "Python".
+=>
+	b[0][0:4:1]		c[3][2:6:]
+			AND
+	'Hell'			'thon'
+
+24. Write a program to get the below output.
+	--- "ython Hello Hell Hell Hell Python Python Pyhton"
+=>
+	c[3][1:6:]+" "+b[0][::]+" "+(b[0][0:4:1]+" ")*3+(c[3][::]+" ")*2+c[3][0:2:]+c[3][-3:-5:-1]+c[3][4::]
+	'ython Hello Hell Hell Hell Python Python Pyhton'
+
+25. Write a program to get the below output.
+	--- ( 9, 7, 5, 2, 3, 1)
+	--- (2, 5, 1, "World", "Hello")
+	--- ("Python", "is", "Name", "My")
+=>
+	a[::-1]
+	(9, 7, 5, 2, 3, 1)
+	
+	b[::-1]
+	(2, 5, 1, 'World', 'Hello')
+	
+	c[::-1]
+	('Python', 'is', 'Name', 'My')
+	
+26. Write a program to get the below Output.
+	--- (2, 3, 1)
+	--- (1, "World", "Hello")
+	--- ("is", "Name", "My")
+=>
+	a[-4::-1]
+	(2, 3, 1)
+
+	b[-3::-1]
+	(1, 'World', 'Hello')
+
+	c[-2::-1]
+	('is', 'Name', 'My')
+
+27. Write a program to get the below Output.
+	--- (7, 5, 2, 3)
+	--- ( 5, 1, "World", "Hello")
+	--- ("Python", "is")
+=>
+	a[-2:-6:-1]
+	(7, 5, 2, 3)
+
+	b[-2::-1]
+	(5, 1, 'World', 'Hello')
+	
+	c[-1:-3:-1]
+	('Python', 'is')
+
+28. Write a program to get the below Output.
+	--- ( 1, 2, 7)
+	--- ("World", 5)
+	--- ( "My", "Python")
+=>
+	a[0::2]
+	(1, 2, 7)
+
+	b[1::2]
+	('World', 5)
+
+	c[0::3]
+	('My', 'Python')
+	
+	
+29. Write a program to get the below Output.
+	--- ( 1, 5)
+	--- ("Hello", 2)
+	--- ("My", "Name", "is", "Python")
+
+=>
+	a[0::3]
+	(1, 5)
+
+	b[0::4]
+	('Hello', 2)
+
+	c
+	('My', 'Name', 'is', 'Python')
+
+
+30. Write a program to get the below Output.
+	--- ( 1, 3, 2, 5, 7, 9)
+	--- ("World", 5)
+	--- ( "My", "Name", "is", "Python")
+=>
+	a
+	(1, 3, 2, 5, 7, 9)
+
+	b[1::2]	
+	('World', 5)
+	
+	c
+	('My', 'Name', 'is', 'Python')
+
+	
+
+31. Write a program to get the below Output.
+	--- ( 7, 2, 1)
+	--- (5, "World")
+	--- ("Python", "My")
+=>
+	a[-2::-1]
+	(7, 5, 2, 3, 1)
+
+	b[1::2]
+	('World', 5)
+
+	c[-1::-3]
+	('Python', 'My')
+	
+	
+32. Write a program to get the below Output.
+	--- ( 9, 5, 3)
+	--- (5, "World", 2)
+	--- ("Python", "My", "Python", "Python", "thon", "thon", "thon")
+=>
+	a[-1::-2]
+	(9, 5, 3)
+
+	b[-2::-2]+b[4::]
+	(5, 'World', 2)
+
+	(c[-1],c[-4],c[-1],c[-1])+(c[-1][2:7:],)*3
+	('Python', 'My', 'Python', 'Python', 'thon', 'thon', 'thon')
+				OR
+	(c[-1],c[-4])+(c[-1]+" ",)*2+(c[-1][2:7:],)*3
+	('Python', 'My', 'Python ', 'Python ', 'thon', 'thon', 'thon')	
+
+33. Write a program to count the number of time "Hello" is.
+=>
+	d.count("Hello")
+	4
+
+34. Write a program to count the number of time 2 is.
+=>
+	d.count(2)
+	2
+
+35. Write a program to find the index location of 1.
+=>
+	d.index(1)
+	4
+	
+36. Write a program to find the index location of 2nd 1.
+=>
+	d.index(1,5)
+	6
+
+37. Write a program to find the index of 2.
+=>
+	d.index(2)
+	5
+
+38. Write a program to find the index of 2nd 2.
+=>
+	d.index(2,6)
+	9
+	
+39. Write a program to find the index of "Hello".
+=>
+	d.index("Hello")
+	0
+
+40. Write a program to find the index of 2nd "Hello".
+=>
+	d.index("Hello",1)
+	1
+
+	

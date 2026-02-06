@@ -1,0 +1,573 @@
+Conditional Algorithm.
+1. Take a number from user and check its even or odd.
+=>
+num=int(input("Enter the number to check the its even or odd =>"))
+
+if num%2==0:
+    print("Number is even")
+else:
+    print("Number is odd")
+
+#OUTPUT=>
+Enter the number to check the its even or odd =>5
+Number is odd
+
+Enter the number to check the its even or odd =>2
+Number is even
+
+
+2. Take 2 number from user and check which is greater.
+=>
+num1=int(input("Enter First number =>"))
+num2=int(input("Enter second number =>"))
+if num1 > num2:
+    print(num1," is greater")
+else:
+    print(num2,"is greater")
+
+#OUTPUT=>
+Enter First number =>20
+Enter second number =>10
+20  is greater
+
+Enter First number =>10
+Enter second number =>40
+40 is greater
+
+3. Write a program to take 3 number as input and check which is greatest one.
+=>
+num1=int(input("Enter First number =>"))
+num2=int(input("Enter second number =>"))
+num3=int(input("Enter third number =>"))
+if num1 > num2 and num1>num3:
+    print(num1," is greater")
+
+elif num2> num1 and num2>num3:
+    print(num2,"is greater")
+else:
+    print(num3,"is greater")
+#OUTPUT=>
+Enter First number =>10
+Enter second number =>20
+Enter third number =>30
+30 is greater
+
+Enter First number =>6
+Enter second number =>5
+Enter third number =>2
+6  is greater
+
+4. Write a program to take 3 number as input and check which one is smallest among all 3.
+=>
+num1=int(input("Enter First number =>"))
+num2=int(input("Enter second number =>"))
+num3=int(input("Enter third number =>"))
+if num1 < num2 and num1<num3:
+    print(num1," is smallest")
+
+elif num2 < num1 and num2<num3:
+    print(num2,"is smallest")
+else:
+    print(num3,"is smallest")
+#OUTPUT=>
+
+Enter First number =>1
+Enter second number =>2
+Enter third number =>5
+1  is smallest
+
+Enter First number =>5
+Enter second number =>4
+Enter third number =>3
+3 is smallest
+
+5. Write a program to take a number from user and check it is divisible by 5 or not.
+=>
+num=int(input("Enter the number to check the last digit of number is  divisible by 5 or not=>"))
+
+if num%5==0:
+    print("Number is divisible by 5")
+else:
+    print("Number is not divisible by 5")
+
+
+#OUTPUT=>
+
+Enter the number to check the last digit of number is  divisible by 5 or not=>25
+Number is divisible by 5
+
+Enter the number to check the last digit of number is  divisible by 5 or not=>24
+Number is not divisible by 5
+
+
+
+6. Write a program to check the last digit of a number is divisible of 2 or not.
+=>
+
+num=int(input("Enter the number to check the last digit of number is divisible by 2 or not"))
+num1=num%10
+
+if num1%2==0:
+    print("Number is divisible by 2")
+else:
+    print("Number is not divisible by 2")
+
+
+#OUTPUT=>
+
+Enter the number to check the last digit of number is divisible by 2 or not124
+Number is divisible by 2
+
+Enter the number to check the last digit of number is divisible by 2 or not125
+Number is not divisible by 2
+
+
+7. Write a program to check the number is divisible of 3 and 9 or not.
+
+=>
+
+num=int(input("Enter the number to check the last digit of number is divisible by 3 and 9=>"))
+
+if num%3==0 and num%9==0:
+    print("Number is divisible by 3 and 9")
+else:
+    print("Number is not divisible by 3 and 9")
+
+
+#OUTPUT=>
+
+Enter the number to check the last digit of number is divisible by 3 and 9=>6
+Number is not divisible by 3 and 9
+
+Enter the number to check the last digit of number is divisible by 3 and 9=>27
+Number is divisible by 3 and 9
+
+8. Write a program to the character is vowel or not.
+=>
+ 	a='f'
+ 	if a=='a' or a=='e' or a=='i' or a=='o' or a=='u':
+ 		print("character is vowel")
+ 	else:
+ 		print("Character is not vowel")
+
+
+9. Write a program to take a string and check the string have vowel or not.
+=>
+a=input("Enter the string to check it contains vowel or not")
+if 'a' in a or 'e' in a or 'i' in a or 'o' in a or 'u' in a:
+    print("String have vowels")
+else:
+    print("String does not have any vowels")
+
+OUTPUT=>
+        Enter the string to check it contains vowel or not Sneha
+        String have vowels
+
+
+a="sneha"
+if 'a' in a :
+    print("vowel a is in string")
+elif 'e' in a :
+    print("vowel e is in string")
+elif 'i' in a :
+    print("vowel i is in string")
+elif 'o' in a:
+    print("vowel o is in string")
+elif 'u' in a:
+    print("vowel u is in string")
+else:
+    print("string not having vowel")
+
+
+10. Write a program to check whether a person is eligible for voting or not (voting age is >=
+18).
+
+=>
+age=int(input("Enter the age to check whether a person is eligible for voting or not=>"))
+if age>=18:
+    print("person is eligible for voting")
+else:
+    print("person is not eligible for voting")
+
+#OUTPUT=>
+
+Enter the age to check whether a person is eligible for voting or not=>18
+person is eligible for voting
+
+Enter the age to check whether a person is eligible for voting or not=>20
+person is eligible for voting
+
+Enter the age to check whether a person is eligible for voting or not=>17
+person is not eligible for voting
+
+11. Write a program to check whether a person is senior citizen or not. If the age is > 60 then
+the person should be consider as senior citizen.
+
+=>
+age=int(input("Enter the age to check whether a person is senior citizen or not=>"))
+if age>60:
+    print("person is  senior citizen")
+else:
+    print("person is not senior citizen")
+
+#OUTPUT=>
+Enter the age to check whether a person is senior citizen or not=>60
+person is not senior citizen
+
+Enter the age to check whether a person is senior citizen or not=>65
+person is eligible senior citizen
+
+Enter the age to check whether a person is senior citizen or not=>45
+person is not senior citizen
+
+12. Write a program to check the number is positive or negative.
+
+=>
+
+num=int(input("Enter the number to check whether the number is positive or negative=>"))
+if num>=0:
+    print("the number is positive")
+else:
+    print("the number is negative")
+
+#OUTPUT=>
+
+Enter the number to check whether the number is positive or negative=>0
+the number is positive
+
+Enter the number to check whether the number is positive or negative=>2
+the number is positive
+
+Enter the number to check whether the number is positive or negative=>-3
+the number is negative
+
+
+13. Write a program to whether a number is divisible by 2 and 3 both.
+=>
+
+num=int(input("Enter the number to check whether  a number is divisible by 2 and 3 =>"))
+if num%2==0 and num%3==0:
+    print("the number is divisible by 2 and 3")
+else:
+    print("the number is not divisible by 2 and 3")
+
+#OUTPUT=>
+Enter the number to check whether  a number is divisible by 2 and 3 =>6
+the number is divisible by 2 and 3
+
+Enter the number to check whether  a number is divisible by 2 and 3 =>2
+the number is not divisible by 2 and 3
+
+
+14. Accept the age of  4 people and display the youngest one.
+=>
+
+age1=int(input("Enter the age of 1st person =>"))
+age2=int(input("Enter the age of 2nd person =>"))
+age3=int(input("Enter the age of 3rd person =>"))
+age4=int(input("Enter the age of 4th person =>"))
+if age1 < age2 and age1 < age3 and age1 < age4:
+    print("1st person is the youngest")
+elif age2 < age1 and age2 < age3 and age2 < age4:
+    print("2nd person is the youngest")
+elif age3 < age1 and age3 < age2 and age3 < age4:
+    print("3rd person the youngest")
+else:
+    print("4th person is the youngest")
+
+#OUTPUT=>
+ 
+Enter the age of 1st person =>7
+Enter the age of 2nd person =>8
+Enter the age of 3rd person =>9
+Enter the age of 4th person =>10
+Person 1 is the youngest
+
+Enter the age of 1st person =>50
+Enter the age of 2nd person =>4
+Enter the age of 3rd person =>20
+Enter the age of 4th person =>3
+4th person is the youngest
+
+
+15. Write a program to accept a number from 1 to 7 and display the name of the day like 1 for
+Sunday, 2 for Monday and so on.
+=>
+
+num=int(input("Enter the a number from 1.Sunday,2.Monday,3.Tuesday,4.Wednesday,5.Thursday,6.Friday,7.Saturday) =>"))
+
+if num==1:
+    print("Sunday")
+elif num==2:
+    print("Monday")
+elif num==3:
+    print("Tuesday")
+elif num==4:
+    print("Wednesday")
+elif num==5:
+    print("Thursday")
+elif num==6:
+    print("Friday")
+elif num==7:
+    print("Saturday")
+else:
+    print("Plz enter Valid Day")
+
+#OUTPUT=>
+
+Enter the a number from 1.Sunday,2.Monday,3.Tuesday,4.Wednesday,5.Thursday,6.Friday,7.Saturday) =>1
+Sunday
+
+Enter the a number from 1.Sunday,2.Monday,3.Tuesday,4.Wednesday,5.Thursday,6.Friday,7.Saturday) =>7
+Saturday
+
+Enter the a number from 1.Sunday,2.Monday,3.Tuesday,4.Wednesday,5.Thursday,6.Friday,7.Saturday) =>4
+Wednesday
+
+16. Write a program to accept a number from 1 to 12 and display the name of the month like 1
+for January, 2 for Feb. and so on.
+=>
+
+num=int(input("Enter the a number from 1.Jan,2.Feb,3.March,4.April,5.May,6.Jun,7.July,8.Aug,9.Sept,10.Oct,11.Nov,12.Dec) =>"))
+
+if num==1:
+    print("January")
+elif num==2:
+    print("February")
+elif num==3:
+    print("March")
+elif num==4:
+    print("April")
+elif num==5:
+    print("May")
+elif num==6:
+    print("June")
+elif num==7:
+    print("July")
+elif num==8:
+    print("August")
+elif num==9:
+    print("September")
+elif num==10:
+    print("October")
+elif num==11:
+    print("November")
+elif num==12:
+    print("December")
+else:
+    print("plz enter valid month")
+
+
+#OUTPUT=>
+
+Enter the a number from 1.Jan,2.Feb,3.March,4.April,5.May,6.Jun,7.July,8.Aug,9.Sept,10.Oct,11.Nov,12.Dec) =>1
+January
+
+Enter the a number from 1.Jan,2.Feb,3.March,4.April,5.May,6.Jun,7.July,8.Aug,9.Sept,10.Oct,11.Nov,12.Dec) =>6
+June
+
+Enter the a number from 1.Jan,2.Feb,3.March,4.April,5.May,6.Jun,7.July,8.Aug,9.Sept,10.Oct,11.Nov,12.Dec) =>12
+December
+
+ 
+ 
+17. Write a program to accept two numbers and mathematical operators and perform
+operation accordingly.
+Like : Enter First Number : 7
+Enter Second Number : 9
+Enter Operator : +
+Your Answer is : 16
+
+=>
+num1=int(input("Enter First Number =>"))
+num2=int(input("Enter second Number =>"))
+op=input("Enter Operator from +,-,/,*,% =>")
+
+if op=='+':
+    c=num1+num2
+    print(num1,op,num2,"=",c)
+elif op=='-':
+    c=num1-num2
+    print(num1,op,num2,"=",c)
+elif op=='/':
+    c=num1/num2
+    print(num1,op,num2,"=",c)
+elif op=='*':
+    c=num1*num2
+    print(num1,op,num2,"=",c)
+elif op=='%':
+    c=num1%num2
+    print(num1,op,num2,"=",c)
+else:
+    print("PLZ enter correct Operator")
+
+#OUTPUT=>
+
+Enter First Number =>9
+Enter second Number =>3
+Enter Operator from +,-,/,*,% =>-
+9 - 3 = 6
+
+Enter First Number =>3
+Enter second Number =>9
+Enter Operator from +,-,/,*,% =>-
+3 - 9 = -6
+
+Enter First Number =>9
+Enter second Number =>3
+Enter Operator from +,-,/,*,% =>%
+9 % 3 = 0
+
+Enter First Number =>9
+Enter second Number =>4
+Enter Operator from +,-,/,*,% =>%
+9 % 4 = 1
+
+
+
+
+
+18. Accept the marks of Eng, Math, Science and Social Science subject and display the stream
+allotted according to following: ---
+All subject total more than 80 marks ---- science stream
+Total < 80 and above 50 ---- Commerce Stream
+Total < 50 ---- Humanities.
+
+=>
+
+eng=int(input("Enter the marks of Eng =>"))
+math=int(input("Enter the marks of Math =>"))
+sci=int(input("Enter the marks of Science =>"))
+ss=int(input("Enter the marks of Social Science =>"))
+
+total=eng+math+sci+ss
+
+if total>80:
+    print("science stream")
+elif total<80 and total>50:
+    print("Commerce Stream")
+else:
+    print("Humanities")
+
+#OUTPUT=>
+
+Enter the marks of Eng =>20
+Enter the marks of Math =>20
+Enter the marks of Science =>20
+Enter the marks of Social Science =>20
+Humanities
+
+Enter the marks of Eng =>50
+Enter the marks of Math =>10
+Enter the marks of Science =>10
+Enter the marks of Social Science =>5
+Commerce Stream
+
+Enter the marks of Eng =>40
+Enter the marks of Math =>20
+Enter the marks of Science =>20
+Enter the marks of Social Science =>20
+science stream
+
+
+
+19. Accept the electric unit from user and calculate the bill according to following rates.
+First 100 Units : Free
+Next 200 Units : Rs 2 per day.
+Above 300 Units : Rs 5 per day.
+If number of unit is 500 then total bill = 0 + 400 + 1000 = 1400
+
+=>
+
+unit=int(input("Enter the electric units=>"))
+
+if unit<=100:
+    print(unit*0)
+elif unit>100 and unit<300:
+    unit1=(unit-100)*2
+    print(unit1)
+elif unit>300:
+    unit1=(100*0)+(200*2)+(unit-300)*5
+    print(unit1)
+
+#OUTPUT=>
+Enter the electric units => 500
+1400
+
+[note-  0----------100--------300------
+            0rs          2rs       5rs
+basically first 100 unit 0 cost then next 200 units means 100+200=300
+so its rage is 300 then for calculation (100*0)for first 100(200*2)next 200
+(unit-300)from 300 we subtract units bcz 5rs range start after 300 units
+ number of unit is 500 then total bill = 0 + 400 + 1000 = 1400]
+ 
+
+
+
+
+20. Accept the age and the gender (“Male”, “Female”), Number of days and display the
+wages(salary) accordingly.
+Age Gender Wage/day
+Age >= 18 and Age<30 Gender == “M” 700
+Gender == “F” 750
+Age >= 30 and Age<40 Gender == “M” 800
+Gender == “F” 850
+
+=>
+
+age = int(input("Enter the age:"))
+
+if age >= 18 and age < 30:
+    gender = input("Enter the gender:")
+    day=int(input("Enter working days"))
+
+    if gender == "M":
+        wage = day * 700
+        print("Wage:", wage)
+
+    elif gender == "F":
+            wage =day * 750
+            print("Wage:", wage)
+    else:
+            print("please enter correct gender")
+
+elif age >= 30 and age <= 40:
+    gender = input("Enter the gender:")
+    day=int(input("Enter working days"))
+
+    if gender == "M":
+        wage = day * 800
+        print("Wage:", wage)
+
+    elif gender == "F":
+            wage =day * 850
+            print("Wage:", wage)
+
+    else:
+            print("please enter correct gender")
+
+else:
+    print("please enter correct age")
+
+
+#OUTPUT=>
+
+Enter the age:20
+Enter the gender:M
+Enter working days50
+Wage: 35000
+
+Enter the age:45
+please enter correct age
+
+Enter the age:35
+Enter the gender:F
+Enter working days10
+Wage: 8500
+
+
+
+
+
+ 
+ 

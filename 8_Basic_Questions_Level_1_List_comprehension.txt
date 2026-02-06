@@ -1,0 +1,61 @@
+##List comprehension 
+##1. Create a list of number from 1 to 10.
+##2. Create a list of number from 10 to 1.
+##3. Create a list of number from -1 to -10.
+##4. Create a list of number from 1 to 30 and each number have difference of 3 numbers.
+##5. Create a List of Squares of numbers from 1 to 10
+##--- output [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+##6. Create a List of Even numbers from 1 to 20
+##--- output [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+##7. Generate a list of characters from a string
+##X = “Helloworld”
+##--- output ['H', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
+##8. Create a list of lengths of words in a sentence
+##X =”This is a sample sentence”
+##--- output [4, 2, 1, 6, 9]
+##9. Generate a list of tuples containing a number and its square
+##--- output [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
+##10. Create a list of lowercase letters
+##--- output ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 
+##'v', 'w', 'x', 'y', 'z']
+##11. Generate a list of uppercase letters
+##--- output ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 
+##'U', 'V', 'W', 'X', 'Y', 'Z']
+##12. Create a list of even numbers squared and odd numbers cubed from 1 to 10
+##--- output [1, 4, 27, 16, 125, 36, 343, 64, 729, 100]
+##13. Generate a list of common multiples of 3 and 5 up to 100
+##--- output [15, 30, 45, 60, 75, 90]
+##14. Create a list of reversed strings from another list
+##X = ['apple', 'banana', 'cherry']
+##--- output ['elppa', 'ananab', 'yrrehc']
+##15. Generate a list of prime numbers from 1 to 50
+##--- output [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+##16. Create a list of squares of even numbers and cubes of odd numbers from -5 to 5
+##--- output [-125, 16, -27, 4, -1, 0, 1, 4, 27, 16, 125]
+##17. Generate a list of strings with their lengths from another list
+##X = ['apple', 'banana', 'cherry']
+##--- output [('apple', 5), ('banana', 6), ('cherry', 6)]
+##18. Create a list of first characters from a list of words
+##X = ['apple', 'banana', 'cherry']
+##--- output ['a', 'b', 'c']
+##19. Generate a list of numbers with their squares if the number is even
+##X = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+##--- output [4, 16, 36, 64, 100]
+##20. Create a list of uppercase words from a sentence
+##X = This is a sample sentence.
+##--- output ['THIS', 'IS', 'A', 'SAMPLE', 'SENTENCE.']
+##21. Generate a list of strings with vowels removed
+##X = ['apple', 'banana', 'cherry']
+##--- output 🡺 ['ppl', 'bnn', 'chrry']
+##22. Create a list of numbers that are divisible by both 3 and 5 from 1 to 100
+##--- output [15, 30, 45, 60, 75, 90]
+##23. Generate a list of numbers with their signs reversed
+##X = [-2, 3, -5, 7, -11]
+##--- output [2, -3, 5, -7, 11]
+##24. Create a list of words with their lengths from a sentence
+##X = This is a sample sentence.
+##--- output 🡺 [('This', 4), ('is', 2), ('a', 1), ('sample', 6), ('sentence.', 9)]
+##25. Generate a list of positive numbers from another list. 
+##a = [1, -2, 3, -4, 5, -6]
+##--- output [1, 3, 5]
+##Functio

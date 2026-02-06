@@ -1,0 +1,86 @@
+"""
+27. Python program to print all even numbers between 1 to 100 using a for loop.
+=>
+
+print("Even numbers between 1 to 100 are:")
+for i in range(101):
+    if i%2==0:
+        print(i)
+        
+28. Python program to print all odd numbers between 1 to 100 using a for loop.
+=>
+
+print("Odd numbers between 1 to 100 are:")
+for i in range(101):
+    if i%2!=0:
+        print(i)
+
+29. Python program to print sum of all even numbers between 1 to 100 using a for
+loop.
+=>
+
+print("Even numbers between 1 to 100 are:")
+sum=0
+for i in range(101):
+    if i%2==0:
+        print(i)
+        sum=sum+i        
+print("Sum of all even numbers between 1 to 100 ",sum)
+
+30. Python program to print sum of all odd numbers between 1 to 100 using a for
+loop.
+=>
+
+print("odd numbers between 1 to 100 are:")
+sum=0
+for i in range(101):
+    if i%2!=0:
+        #print(i)
+        sum=sum+i        
+print("Sum of all odd numbers between 1 to 100 ",sum)
+
+31. Python program to count the digits of a given number using for loop.
+=>
+
+num=input("Enter no")
+count=0
+for i in num:
+    count=count+1
+print("c",count)
+
+32. Python program to print the sum of digits of a given number using for loop.
+=>
+
+num=input("Enter no")
+x=len(num)
+sum=0
+
+for i in range(int(x+1)):
+    sum=sum+i
+print("sum =>",sum)
+
+33. Python program to check whether a given number is Prime or not using for loop.
+=>
+
+34. Python program to print all Prime numbers between 1 to 100 using for loop.
+35. Python program to find the sum of all prime numbers between 1 to 100 using a
+for loop.
+36. Python program to check a given number is Armstrong or not using a for loop.
+37. Python program to print all Armstrong numbers between 1 to n using a for loop.
+38. Python program to check a given number is neon or not using a for loop.
+39.Python program to check number is palindrome or not using for loop.
+40.Python program to print Fibonacci series of a given number using for loop.
+41.Python program to print all alphabets from a to z using for loop.
+42.Python program to print all uppercase alphabets using for loop.
+43. Write a programs to first 10 Even number using for loop
+44.Python program to print all lowercase alphabets using for loop.
+45.Write a programs to first 10 Even number using for loop in reverse order
+46.Write a programs to print number from 1 to 20 except multiple 2 and 3
+"""
+
+
+
+
+
+
+

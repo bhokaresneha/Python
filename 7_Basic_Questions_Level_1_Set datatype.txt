@@ -1,0 +1,364 @@
+Set datatype
+
+1. What is set ?
+=>
+   Set is a unordered collection of unique elements .elements are separated with comma and enclosed in cury '{ }' brackets.
+
+2. Why should we use it ?
+=> 
+	storing unique data 
+	performing set operations like union intersection 
+	handling unordered collection 
+
+
+3. For which scinario it is best for ?
+=>
+	situations requiring 
+	unique element storage,
+	fast membership checks-Checking if an element exists within a set is significantly faster than checking in a list,
+	 and the ability to perform mathematical set operations efficiently.
+
+s = {5, 2, 1, 6, "Hello", (100, 11, "King"), 20}
+cart = { "Book", "Naruto", 4000789, "Cartoon", "Bazaar"}
+MySet = { "Name", "Age", "Address", (1, 2, 3, 4), None, True}
+
+
+1. Write a program to create an empty set.
+=>
+	a=set()
+
+	type(a)
+	<class 'set'>
+
+2. Write a program to make a set with no value.Use above set.
+=>
+	print(a)
+	set()
+
+3. Write a program for following output with and without any function:
+	---{1, 2, 'Bazaar', 5, 6, 'Hello', 'Cartoon', 'Naruto', 20, 4000789, 'Book', (100, 11,'King')}
+=>
+	s|cart
+	{1, 2, 'Bazaar', 5, 6, 'Naruto', (100, 11, 'King'), 'Hello', 20, 4000789, 'Book', 'Cartoon'}
+
+4. Write a program for following output with and without any function:
+	---{None, 1, 2, 5, 6, 'Hello', 'Age', (1, 2, 3, 4), 'Name', 20, (100, 11, 'King'), 'Address'}
+=>
+
+
+5. Write a program for following output with and without any function:
+---{1, 2, 'Bazaar', 'Cartoon', 5, 6, 'Hello', 'Naruto', 20, 4000789, 'Book', (100, 11,'King')}
+=>
+	MySet.union(cart)
+	{None, True, 'Bazaar', 'Naruto', 'Age', (1, 2, 3, 4), 4000789, 'Book', 'Address', 'Cartoon', 'Name'}
+
+6. Write a program for following output with and without any function:
+---{None, True, 'Bazaar', 'Cartoon', 'Age', (1, 2, 3, 4), 'Name', 'Naruto', 4000789, 'Book','Address'}
+=>
+
+7. Write a program for following output with and without any function:
+---{None, True, 2, 5, 6, 'Hello', 'Age', (1, 2, 3, 4), 'Name', 20, (100, 11, 'King'),'Address'}
+=>
+
+
+s1 = { 1, 2, 3, 4, 5}
+s2 = {1, 4, 5, 6, 7 }
+8. Use above set.
+
+9. Write a program to find the common item in s1 and s2 set with and without any method.
+	--- Expected Output : {1, 4, 5}
+=>
+	s1 & s2
+	{1, 4, 5}
+
+10. Write a program to find the common item in s and cart set with and without any method.
+=>
+	s & cart
+	set()
+	
+11. Write a program to find the common item in s and s1 set with and without any method.
+=>
+		
+
+12. Write a program to find the common item in MySet and s1 set with and without any method.
+=>
+	s & s1
+	{1, 2, 5}
+
+13. Write a program to find the what all element present in "s1" but not in "s2" with and without any method.
+	--- expected output : {2, 3}
+=>
+	x=s1.difference(s2)
+	print (x)
+	{2, 3}
+
+
+14. Write a program to find the what all element present in "s1" but not in "s" with and without any method.
+=>
+	print("s1 set contain but not s set =>",s1-s)
+
+	o/p=>	s1 set contain but not s set => {3, 4}
+
+15. Write a program to find the what all element present in "s2" but not in "s1" with and without any method.
+=>
+	print("s2 set contain but not s1 set =>",s2-s1)
+	
+	o/p=> s2 set contain but not s1 set => {6, 7}
+
+16. Write a program to find the what all element present in "cart" but not in "s2" with and without any method.
+=>
+	print("cart set contain but not s2 set=> ",cart.difference(s2))
+
+	o/p=>cart set contain but not s2 set=>  {'Bazaar', 'Book', 4000789, 'Naruto', 'Cartoon'}
+
+17. Write a program to find the what all element present in "MySet" but not in "s2" with and without any method.
+=>
+	print("MySet set contain but not s2 set=> ",MySet.difference(s2))
+
+	o/p=>MySet set contain but not s2 set=> {None, 'Name', (1, 2, 3, 4), 'Address', 'Age'}
+
+
+18. Write a program find items which are not common in both s1 and s2 set with and without any method.
+	--- Expected output : {2, 3, 6, 7}
+=>
+	print("items which are not common in set s1 and s2=>",s1^s2 )
+
+	o/p=> items which are not common in set s1 and s2=> {2, 3, 6, 7}
+
+	
+19. Write a program to find items which are not common in both s and s1 set with and without any method.
+=>
+	print("items which are not common in set s and s1=> ",s^s1)
+
+	o/p=> items which are not common in set s and s1=>  {3, 4, 6, (100, 11, 'King'), 20, 'Hello'}
+
+
+20. Write a program to find items which are not common in both s2 and s2 set with and without any method.
+=>
+	print("items which are not common in set s2 and s2=> ",s2^s2)
+	
+	o/p=>items which are not common in set s2 and s2=>  set()
+
+21. Write a program to find items which are not common in both s1 and cart set with and without any method.
+=>
+	print("items which are not common in set s1 and cart=> ",s1^cart)
+
+	o/p=> items which are not common in set s1 and cart=>  {1, 2, 3, 4, 5, 'Book', 'Cartoon', 'Naruto', 4000789, 'Bazaar'}
+
+
+22. Write a program to find items which are not common in both s and MySet set with and without any method.
+=>
+	print("items which are not common in set s and MySet=>",s^MySet)
+
+	o/p=> items which are not common in set s and MySet=> {2, 5, 6, 'Age', 'Address', (1, 2, 3, 4), 20, 'Hello', None, 'Name', (100, 11, 'King')}
+		
+	
+23. Write a program to find items which are not common in both s and s1 set with and without any method.
+=>
+	print("items which are not common in set s and s1=> ",s^s1)
+
+	o/p=> items which are not common in set s and s1=>  {3, 4, 6, (100, 11, 'King'), 20, 'Hello'}	
+
+24. Write a program to find items which are not common in both s1 and s set with and without any method.
+=>
+	print("items which are not common in set s1 and s=>",s1^s)
+
+	o/p=> items which are not common in set s1 and s=> {3, 4, 6, (100, 11, 'King'), 20, 'Hello'}
+
+
+25. Write a program to insert "Hello" into the set s1.
+=>
+	s1=> {1, 2, 3, 4, 5}
+	
+	s1.add("Hello")
+	print(s1)
+	
+	o/p=>{1, 2, 3, 4, 5, 'Hello'}
+
+	
+
+26. Write a program to insert "World" into the set s2.
+=>
+	s2=> {1, 4, 5, 6, 7}
+	
+	s2.add("World")
+	print(s2)
+	
+	o/p=>{1, 4, 5, 6, 7, 'World'}	
+
+27. Write a program to add 100 and 101 into the set s1 one by one.
+=>
+	s1.add(100)
+	s1.add(101)
+	print(s1)
+
+	o/p=>{1, 2, 3, 4, 5, 100, 101}
+
+28. Write a program to add (1, 2, 3) into the set s1.
+=> 
+	print ("old s1=>",s1)
+
+	s1.update((1,2,3,8))
+	print ("new s1=>",s1)
+
+	o/p=>[Note- same op bcz updated element is already in set so op is same]
+	old s1=> {1, 2, 3, 4, 5,100,101}
+	new s1=> {1, 2, 3, 4, 5, 8, 100, 101, 'Hello'}
+
+
+29. Write a program to insert 89 into the set s2.
+=>
+	s2.add(89)
+	print ("new s2=>",s2)
+
+	o/p=>
+	new s2=> {1, 4, 5, 6, 7, 89, 'World'}
+30. Write a program to insert "King", "Queen" and "Jack" at once into a set s1.
+=>
+	s1.update(["King","Queen","Jack"])
+	
+	print(s1)
+	{1, 2, 3, 4, 5, 8, 100, 101, 'Jack', 'Queen', 'King', 'Hello'}
+
+31. Write a program to insert 1,2 ,"Hello" and 19 at once into a set s2.
+=>
+	s2.update({1,2,"Hello",19})
+
+	print(s2)
+	{1, 2, 4, 5, 6, 7, 'World', 19, 89, 'Hello'}
+
+32. Write a program to insert "King", "Arjun" and "S" at once into a set s.
+=>
+	s.update(["King","Arjun","S"])
+
+	print(s)
+	{1, 2, 5, 6, 'Arjun', 20, 'S', (100, 11, 'King'), 'King', 'Hello'}
+
+
+33. Write a program to insert 12, 23, 34 and "Hey" at once into a set s.
+=>	
+	s.update((12,23,34,"Hey"))
+
+	print(s)
+	{1, 2, 5, 6, 'Arjun', 12, 20, 'S', 23, 34, 'Hey', (100, 11, 'King'), 'King', 'Hello'}
+
+34. Write a program to insert 1 and 2 at once into a set s1.
+=>
+	s1.update([1,2])
+	
+	s1
+	{1, 2, 3, 4, 5, 8, 100, 101, 'Jack', 'Queen', 'King', 'Hello'}
+
+35. Write a program to insert "bye" and "Hi" at once into a set s2.
+=>
+	s2.update(("bye","Hi"))
+	s2
+	{1, 2, 4, 5, 6, 7, 'World', 'Hi', 19, 89, 'Hello', 'bye'}
+
+36. Write a program to insert "Om" and "Rajan" at once into a set s2.
+=>
+	s2.update(("Om","Rajan"))
+	
+	s2
+	{1, 2, 4, 5, 6, 7, 'Rajan', 'World', 'Om', 'Hi', 19, 89, 'Hello', 'bye'}
+
+37. Write a program to remove the first item of set s1.
+=>
+	s1.pop()
+	1
+
+38. Write a program to remove the first item of set s2.
+=>
+	s2.pop()
+	1
+
+39. Write a program to remove the first item of set s1.
+=>
+	s1.pop()
+	2
+	
+40. Write a program to remove the first item of set s.
+=>
+	s.pop()
+	1
+
+41. Write a program to remove the first item of set cart.
+=>
+	cart.pop()
+	'Naruto'
+
+42. Write a program to remove 1 from s2.
+=>
+		
+
+43. Write a program to remove 23 from set s2.
+=>
+	s2.remove(23)
+	
+	-throw error msg bcz 23 not in set s2
+	
+44. Write a program to remove "bye" from set s2.
+=>
+	s2.remove("bye")
+	
+	s2
+	{2, 4, 5, 6, 7, 'Rajan', 'World', 'Om', 'Hi', 19, 89, 'Hello'}	
+
+
+45. Write a program to remove "Om" from s2.
+=>
+	s2.remove("Om")
+
+	s2
+	{2, 4, 5, 6, 7, 'Rajan', 'World', 'Hi', 19, 89, 'Hello'}
+
+46. Write a program to remove "King" from set s.
+=>
+	s.remove("King")
+
+	s
+	{2, 5, 6, 'Arjun', 12, 20, 'S', 23, 34, 'Hey', (100, 11, 'King'), 'Hello'}	
+
+47. Write a program to remove "Hello" from s2.
+=>
+	s2.remove("Hello")
+
+	s2
+	{2, 4, 5, 6, 7, 'Rajan', 'World', 'Hi', 19, 89}
+
+48. Write a program to find the what all element present in "s2" but not in "s" with and without any method.
+=>
+	s2-s
+	
+	{4, 7, 'Rajan', 'World', 'Hi', 19, 89}
+
+49. Write a program to insert 89 into the set s2.
+=>
+	s2.add(89)
+
+	s2
+	{2, 4, 5, 6, 7, 'Rajan', 'World', 'Hi', 19, 89}
+
+50. Write a program to insert "Om" and "Rajan" at once into a set s2.
+=>
+	s2.update(("Om","Rajan"))
+
+	s2
+	{2, 4, 5, 6, 7, 'Rajan', 'World', 'Om', 'Hi', 19, 89}
+
+51. Write a program to remove the first item of set cart.
+=>
+	cart.pop()
+	4000789
+
+52. Write a program to remove "Hello" from s2.
+=>
+	s2.remove("Hello")
+
+	element not present in set s2 so it throws error 	
+	
+	Traceback (most recent call last):
+  	File "<pyshell#59>", line 1, in <module>
+    	s2.remove("Hello")
+	KeyError: 'Hello'
+

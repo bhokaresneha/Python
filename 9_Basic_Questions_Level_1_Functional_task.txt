@@ -1,0 +1,125 @@
+##1. Write a function that takes 2 number and calculate the sum.
+def sum_of_2_num(a,b):
+    sum=a+b
+    print(f"sum of {a} and {b} is =>{sum}")
+##2. Write a function that takes 3 number and calculate the sum.
+
+def sum_of_3_num(a,b,c):
+    sum=a+b+c
+    print(f"sum of {a},{b} and {c} is =>{sum}")
+    
+##3. Write a function that takes length and breath and find the area of a rectangle.
+def area_of_rectangle(length,breath):
+
+    area=length*breath
+    print(f"{area}is the area of a rectangle")
+
+##4. Write a function accept the number and find the square.
+def square(num):
+    
+    a=num**2
+    print(f"square of {num} is =>",a)
+
+##5. Write a function to find the cube of number accepted by the function.
+def cube(num):
+    a=num**3
+    print(f"cube of {num} is =>",a)
+    
+##6. Write a function to check the number is divisible of 2 or not.
+
+def div_by2(num):
+    if num%2==0:
+        print(num,"is divisible by 2")
+    else:
+        print(num,"is not divisible by 2")
+        
+##7. Write a function to check the number is divisible of 11 or not.
+def div_by11(num):
+    if num%11==0:
+        print(num,"is divisible by 11")
+    else:
+        print(num,"is not divisible by 11")
+        
+##8. Write a function to check the number is even or not.
+def even_num(num):
+    if num%2==0:
+        print(num,"is even")
+    else:
+        print(num,"is not even")
+
+##9. Write a function to check the number is odd or not.
+def odd_num(num):
+    if num%2==0:
+        print(num,"is not odd")
+    else:
+        print(num,"is odd ")
+##10. Write a function to accept n numbers from the user and print sum of all number.
+def sum_of_n_numbers(num):
+        add=0
+        print("=>",num)
+        for i in range(num):
+            s=int(input(f"Enter number {i+1} =>"))
+            add=add+s          
+        print(f"Sum of {num} numbers is=>",add)
+        
+##11. Write a function to accept n numbers and print only even.
+def only_even_num(num):
+    for i in range(num):
+        if i%2==0:
+            print(f"{i} is even ")
+            
+while True:
+    print()
+    print("Enter your choice \n1.sum of 2 numbers \t2.sum of 3 numbers \t3.the area of a rectangle.\t4.square \n5.cube \t6.no is divide by 2 \t7.No is divide by  \t8.Number is even or not.\n9.Number is odd or not.\t10.sum of numbers \t11.Only even numbers \t12.Stop")
+    choice=int(input())
+    if choice == 1:
+        print("Addition of 2 Numbers")
+        sum_of_2_num(int(input("Enter 1st number")),int(input("Enter 2nd number")))
+
+    elif choice == 2:
+        print("Addition of 3 Numbers")
+        sum_of_3_num(int(input("Enter 1st number")),int(input("Enter 2nd number")),int(input("Enter 3rd number")))
+
+    elif choice == 3:
+        print("Find the area of a rectangle")
+        area_of_rectangle( int(input("Enter length of a rectangle")), int(input("Enter breath of a rectangle")))
+
+    elif choice == 4:
+        print ("Accept the number and find the square.")
+        square(int(input("Enter number to find square ")))
+
+    elif choice == 5:
+        print("the cube of given number")
+        cube(int(input("Enter number to find cube")))
+
+    elif choice == 6:
+        print("check the number is divisible of 2 or not ")
+        div_by2(int(input("Enter number")))
+
+    elif choice == 7:
+        print("the number is divisible of 11 or not.")
+        div_by11(int(input("Enter number")))
+
+    elif choice == 8:
+        print("to check the number is even or not.")
+        even_num(int(input("Enter number")))     
+
+    elif choice == 9:
+        print("to check the number is odd or not.")
+        odd_num(int(input("Enter number")))   
+
+    elif choice == 10:
+        print("print sum of n number ")
+        sum_of_n_numbers(int(input("How many no you want to add ")))
+            
+
+    elif choice == 11:
+        print("even no between given range")
+        only_even_num(int(input("Enter number where")))
+    else:
+        print("Stop")
+        break
+        
+
+
+

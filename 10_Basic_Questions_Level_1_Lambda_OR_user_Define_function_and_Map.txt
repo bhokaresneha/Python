@@ -1,0 +1,150 @@
+
+#Lambda/user Define function and Map
+
+##1. Write a function to find the Square of each number.
+##--- list1 = [12, 2, 5, 2, 8]
+
+list1 = [12, 2, 5, 2, 8]
+
+square=lambda num:num**2
+
+print(list(map(square,list1)))
+
+##2. Write a function to find the cube of each number.
+##--- list1 = [12, 2, 5, 2, 8]
+list1 = [12, 2, 5, 2, 8]
+
+cube=lambda num:num**3
+
+print(list(map(cube,list1)))
+
+##3. Write a function to print the square root of each number in a list.
+##--- list1 = [12, 2, 5, 2, 8]
+
+list1 = [12, 2, 5, 2, 8]
+
+square_root=lambda num:num**0.5
+print("\nbefore=>",list1)
+print("square root of list num=>",list(map(square_root,list1)))
+
+##4. Write a function to change the case from upper to low of each
+##--- value in a list1 = [ "hello", "king", "is", "My", "nAme"]
+list1 = ["hello", "king", "is", "My", "nAme"]
+
+print("\n",list1)        
+print("after upper to lower=>",list(map(lambda list1:list1.lower(),list1)))
+
+
+
+##5. Write a function to make first letter of each to upper and rest
+##--- should be in lower list1 = ["hEy", "kiNG", "pYTHON"]
+
+list1 = ["hEy", "kiNG", "pYTHON"]
+print("\nbefore=>",list1)
+print("after first letter capital and rest lower =>",list(map(lambda list1:list1.capitalize(),list1)))
+
+
+##6. Write a function to reverse the each word of a given list.
+##--- list1 = [ "Hello", "Coder", "Python", "Java"]
+
+list1 = [ "Hello", "Coder", "Python", "Java"]
+print("before=>",list1)
+print("after reverse the each word of a given list=>",list(map(lambda list1:list1[::-1],list1)))
+
+##7. Write a function to swap the case of each letter in a list
+##--- list1 = ["hEy", "kiNG", "pYTHON"]
+
+list1 = ["hEy", "kiNG", "pYTHON"]
+print("\nbefore=>",list1)
+print("after swap the case of each letter in a list =>",list(map(lambda list1:list1.swapcase(),list1)))
+
+
+##8. Write a function to remove the last letter of each word of given
+##--- list1 = ["hello", "King", "Python", "Java", "coder"]
+
+list1 = ["hello", "King", "Python", "Java", "coder"]
+print("\n before=>",list1)
+print("After remove the last letter of each word of given",(list(map(lambda list1:list1[:-2:-1],list1))))
+
+##9. Write a function to reverse the each word of each list.
+##--- list1 = ["Hello", "King", "Python", "Java", "Coder"]
+
+list1 = ["Hello", "King", "Python", "Java", "Coder"]
+print("\n before=>",list1)
+print("After reverse the each word of each list=>",(list(map(lambda list1:list1[::-1],list1))))
+
+
+##10. Write a function to find the last digit of given list of numbers.
+##--- list1 = [234, 12, 567, 345, 98]
+list1 = [234, 12, 567, 345, 98]
+        ##def x(list1):
+        ##    for i in list1:
+        ##        num=i%10
+        ##        print(num)
+        ##x(list1)   
+print("\nbefore=>",list1)
+print("the last digit of given list of numbers =>",list(map(lambda list1:list1%10,list1)))
+
+##11. Write a function to reverse each number in a list.
+##--- list1 = [123, 12, 456, 987]
+list1 = [123, 12, 456, 987]
+x=[]
+def reverse_num(list1):
+    for val in list1:
+        rev=0
+        while val > 0:
+            digit= val % 10
+            rev=rev*10+digit
+            val //= 10
+        x.append(rev)
+    print("reverse each number in a list =>",x)
+        
+print("\nbefore=>",list1)          
+reverse_num(list1)
+##12. Write a function to find the middle letter of each word in a list
+##--- list1 = ["Hello", "King", "Python", "Java", "C#1"]
+
+list1 = ["Hello", "King", "Python", "Java", "C#1"]
+
+##13. Write a function to show the ascii value of give values
+##--- list1 = ['2', '0', "a", "2", "3", "@", '2']
+list1 = ['2', '0', "a", "2", "3", "@", '2']
+ascii_num=[]
+def ascii_value(list1):
+    for i in list1:
+        print(f"ascii vlaue of {i}is=>",ord(str(i)))
+        ascii_num.append(ord(str(i)))
+print()
+print("given=>",list1)
+ascii_value(list1)
+print("ascii values=>",ascii_num)
+
+
+##14. Write a program to calculate the sum of all the digit of each value in a list.
+##--- list1 = [11, 234, 121, 90, 879]
+list1 = [11, 234, 121, 90, 879]
+
+print()
+print("given",list1)
+res=[]
+def add(list1):
+  res = []
+  for val in list1:
+        total = 0
+        while val > 0:
+            total += val % 10
+            val //= 10
+        res.append(total)
+  print("sum of all the digit of each value in a list =>",res)
+add(list1)
+
+
+##15. Write a function to retrieve the last digit.
+##--- list1 = [11, 234, 121, 90, 879]
+list1 = [11, 234, 121, 90, 879]
+print()
+print("before=>",list1)
+print("retrieve the last digit of each numbers in list=>",list(map(lambda list1:list1%10,list1)))
+
+
+
